@@ -118,7 +118,7 @@ class sfWebRequest extends sfRequest
           $this->setMethod(self::PATCH);
           if ('application/x-www-form-urlencoded' === $this->getContentType())
           {
-            parse_str($this->getContent(), $postParameters);
+              parse_str($this->getContent(), $postParameters);
           }
           break;
 
