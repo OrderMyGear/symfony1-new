@@ -24,7 +24,7 @@
         }
     },
     "replace": {
-        "lexpress/symfony1": "^1.5"
+        "lexpress/symfony1": "self.version"
     },
     "bin": ["data/bin/symfony"]
 }
