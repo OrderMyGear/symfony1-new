@@ -18,8 +18,13 @@
         "propel/sf-propel-o-r-m-plugin": "Propel plugin",
         "psr/log": "Psr logger"
     },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.5-dev"
+        }
+    },
     "replace": {
-        "lexpress/symfony1": "self.version"
+        "lexpress/symfony1": "^1.5"
     },
     "bin": ["data/bin/symfony"]
 }
