@@ -36,7 +36,7 @@ class sfWidgetFormSelectRadio extends sfWidgetFormChoiceBase
         $choices = $this->getChoices();
 
         // with groups?
-        if (count($choices) && is_array(next($choices))) {
+        if (is_array(current($choices))) {
             $parts = [];
             foreach ($choices as $key => $option) {
                 $parts[] = strtr($this->getOption('template'), ['%group%' => $key, '%options%' => $this->formatChoices($name, $value, $option, $attributes)]);
