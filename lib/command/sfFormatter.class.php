@@ -65,7 +65,7 @@ class sfFormatter
      */
     public function formatSection($section, $text, $size = null)
     {
-        if (!$size) {
+        if (!$size || !is_int($size)) {
             $size = $this->size;
         }
 
